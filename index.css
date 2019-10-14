@@ -1,0 +1,1007 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+*{ 
+margin: 0; 
+padding: 0; 
+}
+
+	body{ 
+	background-color: rgba(23,43,63,1.00); 
+	
+}
+
+h1{ 
+	font-family:eloquent-jf-small-caps-pro, serif;
+	color: rgba(199,154,71,1.00); 
+	font-size: 60pt; 
+	letter-spacing: 4pt; 
+	line-height: 1em; 
+	filter: saturate(150%); 
+}
+
+h2{ 
+font-family:eloquent-jf-small-caps-pro, serif; 
+	font-size: 40pt; 
+	letter-spacing: 4px; 
+	line-height: 1em; 
+}
+
+h3{ 
+font-family: roboto-medium, sans-serif; 
+	font-size: 20pt; 
+	letter-spacing: 2px; 
+}
+h6{ 
+font-family: roboto-black, sans-serif; 
+	font-size: 20pt; 
+}
+
+p{ 
+	font-size: 12pt; 
+	font-family: roboto-regular, roboto-medium, sans-serif; 
+	letter-spacing: 1px; 
+	line-height: 1.5em;	
+}
+
+header{ 
+ display: block; 
+position: fixed; 
+width: 100%; 
+z-index: 3; 
+}
+
+header::after{ 
+	content: ''; 
+	display: table; 
+	clear: both; 
+	
+}
+
+/*video---------------------------*/ 
+.v-header{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  color:rgba(0,0,0,1.00);
+}
+
+.container{
+  max-width:960px;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+}
+
+.fullscreen-video-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-height:100%;
+  min-width:100%;
+	max-width: 120%; 
+	max-height: 120%; 
+	position: relative;
+}
+
+.header-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#225470;
+  opacity:0.6;
+}
+
+.header-content{
+  z-index:2;
+	margin: 0 auto;
+}
+
+.header-content h1{
+  margin-bottom:0;
+}
+
+.header-content h4{ 
+	color: white; 
+	font-size: 25pt; 
+	font-weight: 100; 
+	font-family: Roboto-Regular, sans-serif; 
+	line-height:1em; 
+	letter-spacing: 2px; 
+}
+
+.hero-button{ 
+	display: flex; 
+	justify-content: center; 
+	margin-top: 15px; 
+}
+
+.hero-button a{ 
+	color: white; 
+	text-decoration: none; 
+	font-family: Roboto-Black, sans-serif; 
+	letter-spacing: 1px; 
+	background-color: rgba(205,33,31,1.00); 
+	padding: 13px 7px; 
+	border-radius: 5px; 
+	margin-right: 10px; 
+	margin-left: 10px; 
+	font-size: 12pt; 
+}
+
+
+	
+/* navbar------------------------*/ 
+.navbar-background{ 
+background-color: rgba(199,154,71,1.00); 
+	width: 100%; 
+	height: 60px; 
+	position: fixed; 
+	z-index: -2; 
+	opacity: 0.7;
+	
+}
+.logo{ 
+float: left; 
+
+margin-left: 10px; }
+
+.nav-button{ 
+	float: right; 
+}
+
+.nav-button ul{ 
+	list-style: none; 
+	margin-right: 20px; 
+	margin-top: 10px; 
+
+ }
+.nav-button li{ 
+	width: 100px; 
+	text-align: center; 
+	padding: 10px 10px; 
+	display: inline-block; 
+	margin-right: 4px; 
+	transition-duration: 300ms; 
+	transition-timing-function: ease-in-out; 
+}
+
+.nav-button li:hover{ 
+background-color:rgba(205,33,31,1.00);  
+	border-radius: 20px 20px 20px 20px;  
+}
+
+.nav-button a{ 
+text-decoration: none; 
+font-family: Roboto-Regular, sans-serif; 
+font-size: 11pt; 
+color:rgba(255,255,255,1.00); 
+}
+
+/* mobile navbar-----------------------*/ 
+#show-nav { 
+padding: 7px 0 7px 10px;}
+#show-nav  div{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+.mobile-navbar { 
+	background-color: rgba(199,154,71,1.00);
+	display: none; 
+	position: fixed;
+	width:100%; 
+	z-index: 10; 
+	
+ }
+
+.mobile-navbar-menu{ 
+	padding-bottom: 20px; 
+	display: block; 
+}
+
+.mobile-navbar li{ 
+padding: 10px 0 10px 30px; 
+
+}
+
+.mobile-navbar-menu li:hover{ 
+	background-color: rgba(205,33,31,1.00); 
+}
+.mobile-navbar-menu a { 
+	display: block; 
+	text-decoration: none; 
+	font-family: Roboto-Regular, sans-serif; 
+	font-size: 12pt; 
+	color:rgba(255,255,255,1.00); 	
+}
+
+.mobile-logo{ 
+ position: absolute; 
+	left: 50%; 
+	top: 5px;; 
+	margin-left: -50px;
+	
+}
+/*hero-section----------------------*/ 
+.hero-section{
+	display: none;
+	
+}
+		.hero-image{ 
+		
+	background-image: url("photos/hero-image.jpg");
+	width: 100%; 
+	position: relative; 
+	background-attachment: fixed; 
+	z-index: -2; 
+	background-size:cover; 
+	background-repeat: no-repeat;
+	top: 0; 
+}
+.foreground { 
+	background-color:rgba(0,65,88,0.60);
+	position: absolute; 
+	width: 100%; 
+	height:100%;
+	z-index: -1;  	
+}
+	
+.hero-text{ 
+	position: absolute; 
+	bottom: 40%; 
+	width: 100%; 
+	text-align: center; 	
+}
+.hero-text h4{ 
+	color: white; 
+	font-size: 25pt; 
+	font-weight: 100; 
+	font-family: Roboto-Regular, sans-serif; 
+	line-height:1em; 
+	letter-spacing: 2px; 
+}
+
+.hero-button{ 
+	display: flex; 
+	justify-content: center; 
+	margin-top: 15px; 
+	
+
+}
+
+.hero-button a{ 
+	color: white; 
+	text-decoration: none; 
+	font-family: Roboto-Black, sans-serif; 
+	letter-spacing: 1px; 
+	background-color: rgba(205,33,31,1.00); 
+	padding: 13px 7px; 
+	border-radius: 5px; 
+	margin-right: 10px; 
+	margin-left: 10px; 
+	font-size: 12pt; 
+}
+
+
+/* order online--------------------*/ 
+.order-online{ 
+padding: 100px 0; 
+}
+
+.branch-flexbox{ 
+	margin-top: 30px; 
+display: flex; 
+justify-content: center; 
+flex-wrap: wrap; 
+}
+
+.papamoa-east-branch{ 
+background-image: url("photos/excelsa-place-papamoa-east.jpg"); 
+	width: 400px; 
+	padding: 150px 0 5px 0; 
+	background-size: cover;
+	position: relative; 
+	z-index: 0; 
+	margin: 20px; 
+	
+}
+
+.east-branch-overlay{ 
+	background-color: rgba(23,43,63,0.7); 
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	top: 0;
+	z-index: -2; 
+}
+
+.papamoa-plaza-branch{ 
+ 
+background-image: url("photos/papamoa-plaza.jpg"); 
+	width: 400px; 
+	padding: 150px 0 5px 0; 
+	background-size: cover;
+	position: relative; 
+	z-index: 0; 
+	margin: 20px; 
+	
+}
+
+.plaza-branch-overlay{ 
+	background-color: rgba(23,43,63,0.7); 
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	top: 0;
+	z-index: -2; 
+}
+.order-online h2{ 
+	color:rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+	text-align: center; 
+}
+
+.order-online h3{ 
+	padding: 0 20px;
+color: white; 
+	text-align: center; 
+}
+
+.order-online a{ 
+	text-align: center; 
+	display: block; 
+	width: 150px; 
+	color: white; 
+	text-decoration: none; 
+	font-family: Roboto-Black, sans-serif; 
+	letter-spacing: 1px; 
+	background-color: rgba(205,33,31,1.00); 
+	border-radius: 5px; 
+	margin: 10px auto; 
+	font-size: 12pt; 
+	padding: 13px 0;
+}
+
+/*two specials ------------------------------*/ 
+
+.two-special{ 
+	margin: 0 auto; 
+	width: 95%; 
+	display: grid; 
+	grid-template-columns:  1fr 1fr 1fr; 
+	grid-template-areas: 
+		"dinner-special-image dinner-special-text dinner-special-text"
+		"lunch-special-text lunch-special-image lunch-special-image";
+}
+
+.dinner-special-image{ 
+	grid-area: dinner-special-image; 
+	background-image: url("photos/dinner-special-papamoa-east.jpg");
+	width: 100%; 
+	height: auto; 
+	
+	
+}
+.dinner-special-text{ 
+	
+grid-area: dinner-special-text; 
+	padding: 60px 10px 60px 40px;
+ 	filter: saturate(120%); 
+	background-color: rgba(199,154,71,1.00); 
+	border-top-right-radius: 150px; 
+}
+
+.lunch-special-image{  
+	grid-area: lunch-special-image; 
+	background-image: url("photos/lunch-special.jpg");
+	background-size: cover; 
+	background-position: center; 
+	width: 100%; 
+	height: auto; 
+}
+
+.lunch-special-text{
+	text-align: right; 
+	padding: 80px 40px 80px 10px; 
+ 	filter: saturate(120%); 
+	background-color: rgba(199,154,71,1.00); 
+	border-bottom-left-radius: 150px;
+}
+
+.two-special h4{ 
+	color: white; 
+	font-size: 25pt; 
+	font-weight: 100; 
+	font-family: Roboto-black, sans-serif; 
+	letter-spacing: 2px; 
+}
+.two-special p{ 
+	color: white; 
+}
+.two-special span{ 
+	color: white; 
+	font-family: Roboto-Regular, sans-serif; 
+	font-size: 14pt; }
+
+.two-special h5{ 
+	color: white; 
+	font-size: 80pt;
+	font-family: Roboto-Regular, sans-serif; 
+	font-weight: 100; 
+	}
+
+/*specials----------------*/
+
+.specials{ 
+	background-image: url("photos/special-section-background-image.jpg"); 
+	margin-top: 20px; 
+	width: 100%; 
+	position: relative; 
+	background-attachment: fixed; 
+	z-index: -2; 
+	background-size:cover; 
+	background-repeat: no-repeat; 
+}
+.special-overlay{ 
+	background-color: black; 
+	position: absolute; 
+	width: 100%; 
+	height: 100%; 
+	opacity: 0.2; 
+	z-index: -1; 
+}
+
+.special-grid{ 
+	padding: 200px 0; 
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+}
+
+.special-box{ 
+background: rgb(0,65,88);
+background: linear-gradient(139deg, rgba(0,65,88,1) 0%, rgba(0,13,18,1) 100%);
+	width: 300px; 
+	height: 360px; 
+	margin: 10px; 
+}
+
+
+
+.specials h5 { 
+	color:rgba(205,33,31,1.00);  
+	font-size: 50pt;
+	font-family: Roboto-Regular, sans-serif; 
+	font-weight: 100;
+	text-align: center; 
+	padding-top: 40px; 
+	filter: saturate(150%); 
+}
+
+.specials h3{ 
+	color:rgba(199,154,71,1.00);
+	filter: saturate(150%); 
+	margin-left: 20px; 
+	
+}
+.specials ul{ 
+	color: white; 
+	margin: 5px 10px 0 40px; 
+	font-family: Roboto-Light, Roboto-Medium, sans-serif; 
+}
+
+/* menu------------------------------*/
+.menu-flexbox{ 
+	display: flex; 
+	justify-content: center; 
+	flex-wrap: wrap; 
+	padding: 200px 0; 
+}
+
+.takeaway-menu{ 
+	background-image:url("photos/takeaway-bag.jpg"); 
+	object-fit:cover;
+	width: 250px; 
+	border: solid 10px rgba(199,154,71,1.00); 
+	padding-top: 400px; 
+	background-size: cover;
+	margin-top: 20px; 
+	margin-right: 20px; 
+}
+.lunch-menu { 
+	background-image: url("photos/lunch-menu.jpg"); 
+	width: 250px; 
+	border: solid 10px rgba(199,154,71,1.00); 
+	 
+	padding-top: 400px; 
+	background-size: cover; 
+	margin-top: 20px; 
+	margin-right: 20px; 
+
+}
+
+.dine-in-menu{ 
+background-image: url("photos/fine-dining-great-spice-india.jpg"); 
+width: 250px; 
+	border: solid 10px rgba(199,154,71,1.00); 
+
+	padding-top: 400px; 
+	background-size: cover;
+	margin-top: 20px;
+	margin-right: 20px; 
+}
+
+.menu a{ 
+	color: white; 
+	text-decoration: none; 
+	font-family: Roboto-Black, sans-serif; 
+	letter-spacing: 1px; 
+	background-color: rgba(205,33,31,1.00); 
+	width: 170px; 
+	padding: 10px 0; 
+	border-radius: 5px; 
+	font-size: 12pt; 
+	display: block; 
+	text-align: center; 
+	margin: 10px auto; 
+}
+
+/*fine Dining----------------*/ 
+.fine-dining { 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+.fine-dining-image{ 
+content: url("photos/fine-dining-great-spice-india.jpg"); 
+	height: auto; 
+	width: 100%; 
+	grid-column: 3/6; 
+	
+}
+.fine-dining-text{ 
+background-color: rgba(199,154,71,1.00); 
+	filter: saturate(120%);	
+	grid-column: 1/3; 
+	display: flex; 
+	justify-content: center; 
+	padding: 0 10px 0 30px;
+	flex-direction: column; 
+	
+}
+
+.fine-dining h2{ 
+	color:rgba(0,65,88,1.00); 
+	filter: saturate(150%); 
+}
+.fine-dining p{ 
+color:rgba(23,43,63,1.00); 
+	
+}
+
+/*Authentic Food---------------------*/ 
+.authentic { 
+	margin: 100px 0; 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+.authentic-image{ 
+content: url("photos/authentic-food.png"); 
+	height: auto; 
+	width: 100%; 
+	grid-column: 1/4; 
+	
+}
+.authentic-text{ 
+	grid-column: 4/6; 
+	display: flex; 
+	justify-content: center; 
+	padding: 0 30px 0 10px;
+	flex-direction: column; 
+}
+
+.authentic h2{ 
+	color:rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+}
+.authentic p{ 
+color: white; 
+}
+
+/*Catering----------------------*/ 
+
+.catering { 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+.catering-image{ 
+content: url("photos/catering-papamoa-indian-restaurant.jpg"); 
+	height: auto; 
+	width: 100%; 
+	grid-column: 3/6; 
+	
+}
+.catering-text{ 
+background-color: rgba(199,154,71,1.00); 
+	filter: saturate(120%);	
+	grid-column: 1/3; 
+	display: flex; 
+	justify-content: center; 
+	padding: 0 10px 0 30px;
+	flex-direction: column; 
+	
+}
+
+.catering h2{ 
+	color:rgba(0,65,88,1.00); 
+	filter: saturate(150%); 
+
+}
+.catering p{ 
+color:rgba(23,43,63,1.00); 
+}
+
+/*Expereinced Chef------------------------*/ 
+.chef { 
+	margin-top: 100px; 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+.chef-image{ 
+content: url("photos/chef-great-spice.png"); 
+	height: auto; 
+	width: 100%; 
+	grid-column: 1/4; 
+	 -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+	
+}
+.chef-text{ 
+	grid-column: 4/6; 
+	display: flex; 
+	justify-content: center; 
+	padding: 0 30px 0 10px;
+	flex-direction: column; 
+}
+
+.chef h2{ 
+	color:rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+	overflow: hidden; 
+	padding-top: 10px; 
+}
+.chef p{ 
+color: white; 
+}
+
+/*bar----------------------*/ 
+
+.bar { 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+.bar-image{ 
+content: url("photos/hero-image.jpg");
+	height: auto; 
+	width: 100%; 
+	grid-column: 3/6; 
+	
+}
+.bar-text{ 
+background-color: rgba(199,154,71,1.00); 
+	filter: saturate(120%);	
+	grid-column: 1/3; 
+	display: flex; 
+	justify-content: center; 
+	padding: 0 10px 0 30px;
+	flex-direction: column; 
+	
+}
+
+.bar h2{ 
+	color:rgba(0,65,88,1.00); 
+	filter: saturate(150%); 
+}
+.bar p{ 
+color:rgba(23,43,63,1.00); 
+}
+
+/*--------------*/ 
+.usp{ 
+	width: 90%; 
+	margin: 100px auto; 
+	
+	
+}
+.usp-flexbox{ 
+	display: flex;
+	justify-content: center; 
+	flex-wrap: wrap; 
+}
+.usp-content{ 
+	margin: 10px 10px; 
+	background: rgb(255,255,255);
+background: linear-gradient(142deg, rgba(255,255,255,1) 0%, rgba(222,187,121,1) 40%, rgba(205,33,31,1) 100%);
+	width: 300px; 
+	padding-bottom: 150px; 
+}
+.usp h2{ 
+	margin-top: 20px; 
+	text-align: center; 
+color:rgba(23,43,63,1.00); 
+	width: 300px; 
+	font-size: 18pt;
+}
+.usp p{ 
+color:rgba(26,26,26,1.00); 
+text-align: center; 
+	padding: 0 10px; 
+}
+
+/* About US---------------------*/ 
+.about-us-background{ 
+	background-image: url("photos/team-photo-great-spice-india.jpg"); 
+	width: 100%; 
+	background-size: cover;
+	display: flex; 
+	flex-direction: column; 
+	padding: 100px 0; 
+	position: relative; 
+	z-index: -2; 
+	background-attachment: fixed; 
+	
+}
+.about-us-overlay{ 
+	background-color: rgba(0,0,0,0.7); 
+	position: absolute; 
+	top:0 ; 
+	height: 100%; ; 
+	width: 50%; 
+	z-index: -1; 
+}
+
+.about-us h2{ 
+color: rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+	width: 50%; 
+	margin-left: 20px; 
+}
+.about-us p{ 
+	border: solid 10px red; 
+	color: white; 
+	margin-left: 20px; 
+	padding: 10px 20px 10px 20px; 
+width: 42%; }
+
+/*reservation & opening hours section-----------------*/ 
+.reservation{
+	padding: 100px 0; 
+	position: relative; 
+	z-index: 1; 
+}
+
+.reservation-overlay{ 
+background-color:rgba(23,43,63,0.3); 
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	z-index: -2; 
+	
+	} 
+.reservation h2 {
+	color:rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+	text-align: center; 
+}
+form{ 
+	margin: 0 auto; 
+width: 250px; 
+display: flex; 
+flex-direction: column; 
+}
+
+input{ 
+height: 30px; 
+width:100%; 
+border-radius: 7px; 
+margin-bottom: 10px; 
+}
+
+form p{ 
+color: white; 
+}
+button{ 
+	background-color:rgba(205,33,31,1.00); 
+	width: 120px; 
+	height: 30px; 
+	color: white; 
+	font-family: Roboto-Regular, sans-serif; 
+	font-size: 12pt; 
+	border: none; 
+	margin: 0 auto; 
+	border-radius: 5px; 
+}
+
+/*opening hours---------------------..........*/ 
+.opening{ 
+background-color: rgba(23,43,63,1.00); 
+display: flex; 
+justify-content: center; 
+	align-items: center; 
+	padding: 100px 0; 
+}
+.opening-hours{
+	width: 470px; 
+	height: 200px; 
+	background-color: rgba(0,65,88,1.00); 
+	border: solid 10px rgba(199,154,71,1.00); 
+	padding: 40px 20px 40px 20px; 
+}
+.opening-hours h2{ 
+color: rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+	text-align: center; 
+}
+
+.opening-hours h3{ 
+	text-align: center; 
+	color:white;
+	font-size: 30pt; 
+	margin-bottom: 20px;
+
+}
+
+.opening-hours p{ 
+	text-align: left; 
+	padding-left: 40px; 
+	color:white; }
+
+.reservation-grid{ 
+	background-image: url("photos/reservation-image1.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(470px,1fr)); 
+	
+}
+
+
+/*reviews----------------*/ 
+.reviews { 
+	background-image: url("photos/reviews-image.jpg"); 
+	position: relative; 
+	padding: 100px 0; 
+	overflow: hidden; 
+	height: auto;
+	z-index: 2;
+}
+.review-overlay{ 
+background-color: rgba(23,43,63,0.6); 
+	position: absolute; 
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	z-index: -2;
+}
+
+.reviews h2{ 
+color: rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+	text-align: center;
+	
+	
+}
+.reviews p{ 
+color: white; 	
+	width: 70%; 
+	margin: 0 auto;
+}
+.trip-advisor { 
+	width: 100%; 
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+}
+.trip-advisor>div{ 
+	margin: 20px 40px; 
+}
+
+
+
+/* google maps----------------*/ 
+
+/*footer------------------------*/ 
+.footer{ 
+	padding: 50px 0 30px 0; 
+	display: flex; 
+	justify-content: space-around; 
+	flex-wrap: wrap; 
+	width: 100%;
+}
+
+.footer-menu li{ 
+list-style: none; }
+
+.footer-menu li a {
+	list-style: none; 
+	color: white; 
+	line-height: 1.8em; 
+	font-size: 10pt; 
+	font-family: Roboto-Regular, "sans-serif"; 
+}
+.footer-menu li a:hover{ 
+color: rgba(205,33,31,1.00); }
+
+
+.branches p{ 
+color: white; 
+	line-height: 1.8em; 
+	font-size: 10pt; 
+}
+.branches-underline{ 
+	margin: 3px 0 10px 0; 
+	filter: saturate(150%); 
+border-bottom: solid 2px rgba(199,154,71,1.00); 
+	width: 300px; 
+}
+.branches-underline-menu{ 
+	margin: 3px 0 10px 0; 
+	filter: saturate(150%); 
+border-bottom: solid 2px rgba(199,154,71,1.00); 
+	width: 150px; 
+}
+.branches-underline-contact{ 
+	margin: 3px 0 10px 0; 
+	filter: saturate(150%); 
+border-bottom: solid 2px rgba(199,154,71,1.00); 
+	width: 210px; 
+}
+.branches a{ 
+text-decoration: none; 
+font-family: Roboto-Regular, "sans-serif"; 
+}
+
+.contact div{ 
+margin: 10px 0; }
+
+/*copyright-----------------*/ 
+.copyright{ 
+background-color:black;
+padding: 7px 0; }
+
+.copyright p{ 
+color: white; 
+	text-align: center; 
+}
+
+.copyright a{
+text-decoration: none; 
+color: white; 
+}
+
+.mobile-call-to-action{ 
+	z-index: 100;
+	position: fixed; 
+	bottom: 0; 
+	text-decoration: none; 
+	color: white; 
+	background-color: rgba(205,33,31,1.00); 
+	width: 100%; 
+	display: none;
+	text-align: center; 
+	padding: 10px 0; 
+	font-family: Roboto-Regular, "sans-serif"; 
+}

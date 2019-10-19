@@ -10,8 +10,7 @@ margin: 0;
 padding: 0; 
 }
 
-@media (max-width: 1203px){
-
+@media (max-width: 1330px){
 	header {
 		display: none; 
 	}
@@ -22,7 +21,6 @@ padding: 0;
 
 
 @media (min-width: 850px) and (max-width: 1082px){
-	
 	.chef { 
 	margin-top: 100px; 
 	display: grid; 
@@ -46,9 +44,6 @@ content: url("photos/chef-great-spice.png");
 }
 }
 @media (min-width: 765px) and (max-width: 850px)
-{
-	
-
 	.hero-text{ 
 	position: absolute; 
 	bottom: 20%; 
@@ -88,6 +83,7 @@ content: url("photos/chef-great-spice.png");
 
 
 @media (max-width: 766px){
+	
 	.hero-image{ 
 	background-image: url("photos/hero-image.jpg"); 
 	background-attachment:scroll;
@@ -605,9 +601,9 @@ color: rgba(199,154,71,1.00);
 	flex-direction: column; 
 	
 }
-	.mobile-call-to-action{
-		display: block;
-	}
+
+	.mobile-call{ 
+	display: block; }
 }
 
 @media (max-width: 369px){

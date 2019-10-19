@@ -64,7 +64,7 @@
 	</nav>
 	
 
-<div class="v-header container">
+	<div class="v-header container">
     <div class="fullscreen-video-wrap">
       <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
       <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
@@ -82,8 +82,6 @@
  		 <div class="hero-button"><a href="tel:075424666"> <em class="fas fa-phone-alt" style="color: white;"></em> Papamoa East</a> <a href="tel:075722377"> <em class="fas fa-phone-alt" style="color: white;"></em> Papamoa Plaza</a></div>
     </div>
   </div>
-
-	
 
 	<div class="hero-section" id="home"> 
 		<div class="hero-image"> 
@@ -477,10 +475,26 @@ If you fancy being a bit more adventurous and trying something new, come here at
 		<p>©Great Spice 2019. <a href="https://webduel.co.nz/"> Website created by Webduel. </a> </p>
 	</div>
 	
-	<a href="tel:075424666" class="mobile-call-to-action"><i class="fas fa-phone-alt" style="color: white; font-size: 16pt;"></i>&nbsp;&nbsp;Call Us</a>
+	<div class="mobile-call"> 
+	<div id="show-call-to-action"> 
+			<a href="#" class="remove-text"><i class="fas fa-phone-alt" style="color: white; font-size: 16pt;"></i>&nbsp;&nbsp;Call Us</a>
+	</div>
+	
+	<div id="close-call-to-action"> 
+		<i ></i>
+			<a href="#" class="remove-text"><i class="fas fa-times" style="color: white; font-size: 16pt;"></i>&nbsp;&nbsp;close</a>
+	</div>
 	
 	
+	
+	<div class="mobile-call-to-action-branches">
+		<div class="flex-box">
+			<a href="tel:075424666"><i class="fas fa-phone-alt" style="color: white; font-size: 16pt;"></i>&nbsp;&nbsp;Papamoa East</a>
 
+			<a href="tel:075424666"  style="background-color: rgba(255,128,0,1);"><i class="fas fa-phone-alt" style="color: white; font-size: 16pt;"></i>&nbsp;&nbsp;Papamoa Plaza</a>
+		 </div>
+	</div>
+	</div>
 			<script> 
  		$('#hide-nav').hide(); 
 		$('.mobile-navbar-menu').hide(); 
@@ -557,7 +571,21 @@ If you fancy being a bit more adventurous and trying something new, come here at
 	}
 
 }
-
+				
+//mobile call to action 
+var showLightbox= $(".mobile-call-to-action-branches"); 
+	
+	showLightbox.hide(); 
+	$('#show-call-to-action').on('click', function(){ 
+		showLightbox.show("slow"); 
+		$('#show-call-to-action').hide("slow"); 
+	}); 
+	
+	$('#close-call-to-action').on('click', function(){ 
+		showLightbox.hide("slow"); 
+		$('#show-call-to-action').show("slow"); 
+	}); 
+	
 			
 	
 	</script>

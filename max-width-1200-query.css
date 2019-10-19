@@ -749,8 +749,7 @@ content: url("photos/mobile/hero-image.jpg");
 	.hero-section{ 
 	display: block;}
 	
-		.hero-image{ 
-		
+	.hero-image{ 
 	background-image: url("photos/hero-image.jpg");
 	width: 100%; 
 	position: relative; 

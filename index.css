@@ -59,6 +59,8 @@ header::after{
 	
 }
 /*video background*/
+.v-header-container{ 
+display: none; }
 .v-header{
   height:100vh;
   display:flex;
@@ -238,11 +240,13 @@ padding: 10px 0 10px 30px;
 }
 /*hero-section----------------------*/ 
 
+.hero-section{
+	display: block;
+}
 .hero-image{ 
-	display: none;
 	background-image: url("photos/hero-image.jpg"); 
 	background-attachment: fixed; 
-	/*display: inline-block; */
+	display: inline-block; 
 	width: 100%; 
 	font-size: 0; 
 	line-height: 0; 
@@ -253,8 +257,8 @@ padding: 10px 0 10px 30px;
 	
 }
 .foreground { 
-	display: none; 
-	height: 0; 
+	display: block; 
+	height: 400px; 
 	padding-top: 55%;
 background-color: rgba(23,43,63,0.60); 
 	position: relative; 
@@ -275,7 +279,7 @@ background-color: rgba(23,43,63,0.60);
 	letter-spacing: 2px; 
 }
 
-.hero-button{ 
+.hero-button-mobile{ 
 	display: flex; 
 	justify-content: center; 
 	margin-top: 15px; 
@@ -283,7 +287,7 @@ background-color: rgba(23,43,63,0.60);
 
 }
 
-.hero-button a{ 
+.hero-button-mobile a{ 
 	color: white; 
 	text-decoration: none; 
 	font-family: Roboto-Black, sans-serif; 

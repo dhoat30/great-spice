@@ -87,7 +87,6 @@ content: url("photos/chef-great-spice.png");
 	.hero-image{ 
 	background-image: url("photos/hero-image.jpg"); 
 	background-attachment:scroll;
-	display: inline-block; 
 	width: 100%; 
 	font-size: 0; 
 	line-height: 0; 
@@ -98,7 +97,7 @@ content: url("photos/chef-great-spice.png");
 	
 }
 .foreground { 
-	display: block; 
+	
 	height: 0; 
 	padding-top: 55%;
 background-color: rgba(23,43,63,0.60); 
@@ -116,7 +115,7 @@ background-color: rgba(23,43,63,0.60);
 }
 
 .hero-button{ 
-	display: flex; 
+	
 	justify-content: center; 
 	margin-top: 15px; 
 	
@@ -618,7 +617,6 @@ color: rgba(199,154,71,1.00);
 .hero-image{ 
 	background-image: url("photos/mobile/hero-image.jpg"); 
 	background-attachment: fixed; 
-	display: inline-block; 
 	width: 100%;  
 	font-size: 0; 
 	line-height: 0; 
@@ -628,7 +626,7 @@ color: rgba(199,154,71,1.00);
 	background-repeat: no-repeat; 
 }
 .foreground { 
-	display: block; 
+
 	height: 0; 
 	padding-top: 55%;
 background-color: rgba(23,43,63,0.80); 
@@ -651,7 +649,6 @@ background-color: rgba(23,43,63,0.80);
 }
 
 .hero-button{ 
-	display: flex; 
 	justify-content: center; 
 	margin-top: 15px; 
 	
@@ -742,15 +739,10 @@ content: url("photos/mobile/hero-image.jpg");
 }
 
 @media (max-width: 955px){
-	.v-header{
-		display: none; 
-	}
+
 	
-	.hero-section{ 
-	display: block;}
 	
 		.hero-image{ 
-		
 	background-image: url("photos/hero-image.jpg");
 	width: 100%; 
 	position: relative; 
@@ -784,7 +776,6 @@ content: url("photos/mobile/hero-image.jpg");
 }
 
 .hero-button{ 
-	display: flex; 
 	justify-content: center; 
 	margin-top: 15px; 
 	

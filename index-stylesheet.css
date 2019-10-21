@@ -886,6 +886,16 @@ color: rgba(199,154,71,1.00);
 	height: auto;
 	z-index: 2;
 }
+
+.reviews i{ 
+color: white; 
+text-align: center; 
+font-size: 25pt; 
+width: 100%; 
+margin-top: 20px; 	
+}
+
+
 .review-overlay{ 
 background-color: rgba(23,43,63,0.6); 
 	position: absolute; 
@@ -943,6 +953,8 @@ list-style: none; }
 .footer-menu li a:hover{ 
 color: rgba(205,33,31,1.00); }
 
+.branches{ 
+margin-top: 20px;}
 
 .branches p{ 
 color: white; 

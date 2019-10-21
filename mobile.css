@@ -378,232 +378,10 @@ width: 90%;
 	width: 90%; 
 	margin: 20px auto; 
 }
-}
-
-@media (max-width: 558px){
-	
-	.specials{ 
-	background-image:url("photos/mobile/special-section-background-image-mobile.jpg"); 
-	margin-top: 20px; 
-	width: 100%; 
-	position: relative; 
-	background-attachment: fixed; 
-	z-index: -2; 
-	background-size:cover; 
-	background-repeat: no-repeat; 
-}
-	h1{ 
-	font-size: 25pt; }
-	
-	h2{ 
-	font-size: 25pt; }
-	
-	.hero-text h4{ 
-	font-size: 14pt; }
-	
-		/*fine Dining----------------*/ 
-.fine-dining { 
-	display: flex; 
-	flex-direction: column; 
-}
-.fine-dining-image{ 
-content: url("photos/fine-dining-great-spice-india.jpg"); 
-	height: auto; 
-	width: 100%; 
-}
-.fine-dining-text{ 
-background-color: rgba(199,154,71,1.00); 
-	filter: saturate(120%);	
-	display: flex; 
-	justify-content: center; 
-	padding: 50px 30px 50px 30px;
-	flex-direction: column; 
-}
-	.fine-dining h2{ 
-	font-size: 25pt; }
-/*Authentic Food---------------------*/ 
-.authentic { 
-		display: flex; 
-	flex-direction: column-reverse; 
-
-}
-.authentic-image{ 
-content: url("photos/authentic-food.png"); 
-	height: auto; 
-	width: 100%; 
-
-	
-}
-.authentic-text{ 
-	display: flex; 
-	justify-content: center; 
-	padding: 0 30px 50px 30px;
-	flex-direction: column; 
-}
-	
-	.authentic-text h2{ 
-	font-size: 25pt; }
-/*Catering----------------------*/ 
-.catering { 
-	display: flex; 
-	flex-direction: column; 
-}
-.catering-image{ 
-content: url("photos/catering-papamoa-indian-restaurant.jpg"); 
-	height: auto; 
-	width: 100%;
-}
-.catering-text{ 
-background-color: rgba(199,154,71,1.00); 
-	filter: saturate(120%);	
-	display: flex; 
-	justify-content: center; 
-	padding: 50px 30px 50px 30px;
-	flex-direction: column; 
-}
-	.catering h2{ 
-	font-size: 25pt; }
-
-/*Expereinced Chef------------------------*/ 
-.chef { 
-	display: flex; 
-	flex-direction: column-reverse; 
-}
-.chef-image{ 
-content: url("photos/chef-great-spice.png"); 
-	height: auto; 
-	width: 100%; 
-	 -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-	
-}
-.chef-text{ 
-
-	display: flex; 
-	justify-content: center; 
-	padding: 0 30px 50px 30px;
-	flex-direction: column; 
-}
-	.chef-text h2{ 
-	font-size: 22pt; 
-	overflow: hidden; }
-/*bar----------------------*/ 
-.bar { 
-	display: flex; 
-	flex-direction: column;  
-}
-.bar-image{ 
-content: url("photos/mobile/hero-image.jpg"); 
-	height: auto; 
-	width: 100%; 	
-}
-.bar-text{ 
-background-color: rgba(199,154,71,1.00); 
-	filter: saturate(120%);	
-	display: flex; 
-	justify-content: center; 
-	padding: 50px 30px 50px 30px;
-	flex-direction: column; 
-}
-.bar h2{ 
-	font-size: 25pt; }
-
-/*reservation & opening hours section-----------------*/ 
-.reservation{
-	padding: 100px 0; 
-	position: relative; 
-	z-index: 1; 
-}
-
-.reservation-overlay{ 
-background-color:rgba(23,43,63,0.3); 
-	top: 0; 
-	width: 100%; 
-	height: 100%; 
-	position: absolute; 
-	z-index: -2; 
-	
-	} 
-.reservation h2 {
-	color:rgba(199,154,71,1.00); 
-	filter: saturate(150%); 
-	text-align: center; 
-}
-form{ 
-	margin: 0 auto; 
-width: 250px; 
-display: flex; 
-flex-direction: column; 
-}
-
-input{ 
-height: 30px; 
-width:100%; 
-border-radius: 7px; 
-margin-bottom: 10px; 
-}
-
-form p{ 
-color: white; 
-}
-button{ 
-	background-color:rgba(205,33,31,1.00); 
-	width: 120px; 
-	height: 30px; 
-	color: white; 
-	font-family: Roboto-Regular, sans-serif; 
-	font-size: 12pt; 
-	border: none; 
-	margin: 0 auto; 
-	border-radius: 5px; 
-}
-
-/*opening hours---------------------..........*/ 
-.opening{ 
-background-color: rgba(23,43,63,1.00); 
-display: flex; 
-justify-content: center; 
-	align-items: center; 
-	padding: 100px 0; 
-}
-.opening-hours{
-	width: 100%; 
-	height: 200px; 
-	background-color: rgba(0,65,88,1.00); 
-	border: solid 10px rgba(199,154,71,1.00); 
-	padding: 30px 0; 
-}
-.opening-hours h2{ 
-color: rgba(199,154,71,1.00); 
-	filter: saturate(150%); 
-	text-align: center; 
-}
-
-.opening-hours h3{ 
-	text-align: center; 
-	color:white;
-	font-size: 18pt; 
-	margin-bottom: 10px;
 
 }
 
-.opening-hours p{ 
-	text-align: center; 
-	padding-left: 20px; 
-	color:white; }
 
-.reservation-grid{ 
-	background-image: url("photos/reservation-image1.jpg"); 
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	display: flex; 
-	flex-direction: column; 
-	
-}
-
-	.mobile-call{ 
-	display: block; }
-}
 
 @media (max-width: 369px){
 	
@@ -748,3 +526,281 @@ display: none; }
 
 }
 
+
+@media (max-width: 675px){
+	.specials{ 
+	background-image:url("photos/mobile/special-section-background-image-mobile.jpg"); 
+	margin-top: 20px; 
+	width: 100%; 
+	position: relative; 
+	background-attachment: fixed; 
+	z-index: -2; 
+	background-size:cover; 
+	background-repeat: no-repeat; 
+}
+	h1{ 
+	font-size: 25pt; }
+	
+	h2{ 
+	font-size: 25pt; }
+	
+	.hero-text h4{ 
+	font-size: 14pt; }
+	
+		/*fine Dining----------------*/ 
+.fine-dining { 
+	display: flex; 
+	flex-direction: column; 
+}
+.fine-dining-image{ 
+content: url("photos/fine-dining-great-spice-india.jpg"); 
+	height: auto; 
+	width: 100%; 
+}
+.fine-dining-text{ 
+background-color: rgba(199,154,71,1.00); 
+	filter: saturate(120%);	
+	display: flex; 
+	justify-content: center; 
+	padding: 50px 30px 50px 30px;
+	flex-direction: column; 
+}
+	.fine-dining h2{ 
+	font-size: 25pt; }
+/*Authentic Food---------------------*/ 
+.authentic { 
+		display: flex; 
+	flex-direction: column-reverse; 
+
+}
+.authentic-image{ 
+content: url("photos/authentic-food.png"); 
+	height: auto; 
+	width: 100%; 
+
+	
+}
+.authentic-text{ 
+	display: flex; 
+	justify-content: center; 
+	padding: 0 30px 50px 30px;
+	flex-direction: column; 
+}
+	
+	.authentic-text h2{ 
+	font-size: 25pt; }
+/*Catering----------------------*/ 
+.catering { 
+	display: flex; 
+	flex-direction: column; 
+}
+.catering-image{ 
+content: url("photos/catering-papamoa-indian-restaurant.jpg"); 
+	height: auto; 
+	width: 100%;
+}
+.catering-text{ 
+background-color: rgba(199,154,71,1.00); 
+	filter: saturate(120%);	
+	display: flex; 
+	justify-content: center; 
+	padding: 50px 30px 50px 30px;
+	flex-direction: column; 
+}
+	.catering h2{ 
+	font-size: 25pt; }
+
+/*Expereinced Chef------------------------*/ 
+.chef { 
+	display: flex; 
+	flex-direction: column-reverse; 
+}
+.chef-image{ 
+content: url("photos/chef-great-spice.png"); 
+	height: auto; 
+	width: 100%; 
+	 -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+	
+}
+.chef-text{ 
+
+	display: flex; 
+	justify-content: center; 
+	padding: 0 30px 50px 30px;
+	flex-direction: column; 
+}
+	.chef-text h2{ 
+	font-size: 22pt; 
+	overflow: hidden; }
+/*bar----------------------*/ 
+.bar { 
+	display: flex; 
+	flex-direction: column;  
+}
+.bar-image{ 
+content: url("photos/hero-image.jpg");
+	height: auto; 
+	width: 100%; 	
+}
+.bar-text{ 
+background-color: rgba(199,154,71,1.00); 
+	filter: saturate(120%);	
+	display: flex; 
+	justify-content: center; 
+	padding: 50px 30px 50px 30px;
+	flex-direction: column; 
+}
+.bar h2{ 
+	font-size: 25pt; }
+	
+/* About US---------------------*/ 
+.about-us-background{ 
+	background-image: url("photos/team-photo-great-spice-india.jpg"); 
+	width: 100%; 
+	background-size: cover;
+	display: flex; 
+	flex-direction: column; 
+	padding: 150px 0; 
+	position: relative; 
+	z-index: -2; 
+	background-attachment: fixed; 
+	
+}
+.about-us-overlay{ 
+	width: 100%; 
+}
+
+.about-us h2{ 
+color: rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+	width: 100%; 
+	margin-left: 10px; 
+	text-align: left;
+}
+.about-us p{ 
+	border: solid 5px red; 
+	color: white; 
+	margin-left: 10px; 
+	margin-right: 10px; 
+	margin-top: 10px;
+	padding: 10px 20px 10px 20px; 
+	width: 80%; 
+	height: 100%;}
+
+
+/*reservation & opening hours section-----------------*/ 
+.reservation{
+	padding: 100px 0; 
+	position: relative; 
+	z-index: 1; 
+}
+
+.reservation-overlay{ 
+background-color:rgba(23,43,63,0.3); 
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	z-index: -2; 
+	
+	} 
+.reservation h2 {
+	color:rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+	text-align: center; 
+}
+form{ 
+	margin: 0 auto; 
+width: 250px; 
+display: flex; 
+flex-direction: column; 
+}
+
+input{ 
+height: 30px; 
+width:100%; 
+border-radius: 7px; 
+margin-bottom: 10px; 
+}
+
+form p{ 
+color: white; 
+}
+button{ 
+	background-color:rgba(205,33,31,1.00); 
+	width: 120px; 
+	height: 30px; 
+	color: white; 
+	font-family: Roboto-Regular, sans-serif; 
+	font-size: 12pt; 
+	border: none; 
+	margin: 0 auto; 
+	border-radius: 5px; 
+}
+
+/*opening hours---------------------..........*/ 
+.opening{ 
+background-color: rgba(23,43,63,1.00); 
+display: flex; 
+justify-content: center; 
+	align-items: center; 
+	padding: 100px 0; 
+}
+.opening-hours{
+	width: 100%; 
+	height: 200px; 
+	background-color: rgba(0,65,88,1.00); 
+	border: solid 10px rgba(199,154,71,1.00); 
+	padding: 30px 0; 
+}
+.opening-hours h2{ 
+color: rgba(199,154,71,1.00); 
+	filter: saturate(150%); 
+	text-align: center; 
+}
+
+.opening-hours h3{ 
+	text-align: center; 
+	color:white;
+	font-size: 18pt; 
+	margin-bottom: 10px;
+
+}
+
+.opening-hours p{ 
+	text-align: center; 
+	padding-left: 20px; 
+	color:white; }
+
+.reservation-grid{ 
+	background-image: url("photos/reservation-image1.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	display: flex; 
+	flex-direction: column; 
+	
+}
+	
+/*ratings-----------*/ 
+	.reviews h2{ 
+	text-align: left;
+	margin: 0 20px;}
+	
+	.reviews p{ 
+color: white; 	
+	width: 90%; 
+	margin: 10px 20px;
+}
+	
+.reviews i{ 
+color: white; 
+text-align: left; 
+font-size: 25pt; 
+width: 100%; 
+	margin: 20px 0 0 20px; 	
+}
+
+	.mobile-call{ 
+	display: block; }
+}

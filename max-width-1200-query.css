@@ -742,7 +742,11 @@ content: url("photos/mobile/hero-image.jpg");
 
 	
 	
+<<<<<<< HEAD
 		.hero-image{ 
+=======
+	.hero-image{ 
+>>>>>>> 8c61e66a2e5e9a563dfd9e76311c512aacba54f5
 	background-image: url("photos/hero-image.jpg");
 	width: 100%; 
 	position: relative; 
